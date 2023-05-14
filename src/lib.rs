@@ -128,17 +128,15 @@ mod tests {
     #[test]
     fn test_encryption_from_string() {
         let test_string = "Hello";
-        let key: u128 = 998;
+        let key: u128 = 9999999999;
 
         let test_bits = string_to_bits(&test_string); // Convert string to ACII representation '01001000 01100101 01101100 01101100 01101111'
         let bits_encoded = encode(&test_bits, key); // Encode bits representation with 'key'
         let bits_decoded = decode(&bits_encoded, key); // Decode encoded representation with 'key'
 
-        println!("{}", bits_to_bits_string(&bits_encoded));
-
         assert_eq!(bits_to_bits_string(&test_bits), "01001000 01100101 01101100 01101100 01101111");
         assert_ne!(bits_to_bits_string(&bits_encoded), "01001000 01100101 01101100 01101100 01101111");
-        assert_eq!(bits_to_bits_string(&bits_decoded), "01001000 01100101 01101100 01101100 01101110");
+        assert_eq!(bits_to_bits_string(&bits_decoded), "01001000 01100101 01101100 01101100 01101111");
         assert_eq!(bits_to_ascii_string(&bits_decoded), test_string);
     }
 

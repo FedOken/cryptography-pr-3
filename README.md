@@ -23,18 +23,12 @@ The library implements the following functionality:
 `cargo test`
 
 #### Additional:
-In file lib.rs there are tests with examples of application and comments how the code works.
+In file [lib.rs](https://github.com/FedOken/cryptography-pr-3/blob/main/src/lib.rs) there are tests with examples of application and comments how the code works.
 
 #### Examples:
-String: <i>"H"</i>, key: <i>999</i>.
-String in bits: `H => 01001000`
-Bits encoded with S and P block: `01001000 => 10010001`
+String: <i>"H"</i>, key: <i>999</i>. String in bits: `H => 01001000`. Bits encoded with S and P block: `01001000 => 10010001`
 
-String: <i>"Hello"</i>, key: <i>998</i>.
-String in bits: `Hello => 01001000 01100101 01101100 01101100 01101111`
-Bits encoded with S and P block: `01001000 01100101 01101100 01101100 01101111 => 10001000 11111111 11110110 11110110 11111101`
+String: <i>"Hello"</i>, key: <i>998</i>. String in bits: `Hello => 01001000 01100101 01101100 01101100 01101111`. Bits encoded with S and P block: `01001000 01100101 01101100 01101100 01101111 => 10001000 11111111 11110110 11110110 11111101`
 
-String: <i>"Hello"</i>, key: <i>999</i>.
-String in bits: `Hello => 01001000 01100101 01101100 01101100 01101111`
-Bits encoded with S and P block: `01001000 01100101 01101100 01101100 01101111 => 10001001 11111110 11110111 11110111 11111100`
+String: <i>"Hello"</i>, key: <i>999</i>. String in bits: `Hello => 01001000 01100101 01101100 01101100 01101111`. Bits encoded with S and P block: `01001000 01100101 01101100 01101100 01101111 => 10001001 11111110 11110111 11110111 11111100`
 
